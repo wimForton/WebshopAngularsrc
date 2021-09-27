@@ -1,0 +1,70 @@
+h2,
+p {
+    color: white;
+    text-align: center;
+}
+
+.pricetext {
+    position: absolute;
+    font-size: 1em;
+    padding: 5px;
+    border: 1px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fill, 325px);
+    // background-color: #2196F3;
+    padding: 10px;
+}
+
+.btn-buy {
+    background-color: rgb(26, 45, 99);
+    color: rgb(255, 217, 0);
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 0px;
+    border-radius: 16px;
+    margin-top: 10px;
+}
+
+.paginator {
+    padding: 6px;
+}
+
+.productspagediv {
+    background-color: rgb(7, 17, 58);
+    background-color: rgba($color: rgb(16, 28, 82), $alpha: 0.6);
+    max-width: 1024px;
+    margin: auto;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.productdiv {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+div {
+    background-color: rgba($color: rgb(165, 179, 243), $alpha: 0.1);
+    padding: 3px;
+    border: 1px solid #61aeec;
+    border-radius: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 3px;
+}
+
+label {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+button {
+    margin-top: 5px;
+}

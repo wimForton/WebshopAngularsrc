@@ -1,0 +1,70 @@
+<div class="productspagediv">
+    <h2>SpaceShop 3000</h2>
+    <!-- <div class="row">
+    <label class="btn-primary" ngbButtonLabel>
+        <input #showMoonsCheckBox id="showMoonsCheckBox" type="checkbox" [checked]="showMoons" (change)="onShowMoonsChanged(showMoonsCheckBox.checked)" />
+        Show moons
+    </label>
+    <label class="btn-primary" ngbButtonLabel>
+        <input #showPlanetsCheckBox id="showPlanetsCheckBox" type="checkbox" [checked]="showPlanets" (change)="onShowPlanetsChanged(showPlanetsCheckBox.checked)" />
+        Show planets
+    </label>
+    <label class="btn-primary" ngbButtonLabel>
+        <input #showStarsCheckBox id="showStarsCheckBox" type="checkbox" [checked]="showStars" (change)="onShowStarsChanged(showStarsCheckBox.checked)" />
+        Show stars
+    </label>
+    <input type="text" #searchbox/>
+    <Button (click)="onSearchEnter(searchbox.value)">search space products</Button>
+</div> -->
+
+    <div class="row">
+        <div class="col">
+            <div ngbDropdown class="d-inline-block">
+                <label class="btn-primary" ngbButtonLabel>
+            <input #showMoonsCheckBox id="showMoonsCheckBox" type="checkbox" [checked]="showMoons" (change)="onShowMoonsChanged(showMoonsCheckBox.checked)" />
+            Show moons
+        </label>
+                <label class="btn-primary" ngbButtonLabel>
+            <input #showPlanetsCheckBox id="showPlanetsCheckBox" type="checkbox" [checked]="showPlanets" (change)="onShowPlanetsChanged(showPlanetsCheckBox.checked)" />
+            Show planets
+        </label>
+                <label class="btn-primary" ngbButtonLabel>
+            <input #showStarsCheckBox id="showStarsCheckBox" type="checkbox" [checked]="showStars" (change)="onShowStarsChanged(showStarsCheckBox.checked)" />
+            Show stars
+        </label>
+            </div>
+        </div>
+
+        <div class="col text-right">
+            <div ngbDropdown placement="top-right" class="d-inline-block">
+                <input type="text" #searchbox/>
+                <Button class="btn-primary" (click)="onSearchEnter(searchbox.value)">search space products</Button>
+            </div>
+        </div>
+    </div>
+    <div class="paginator">
+        <ngb-pagination class="pagination" [collectionSize]="productCount" [pageSize]="9" [(page)]="page" aria-label="Default pagination" (pageChange)="GetSearchProducts()"></ngb-pagination>
+    </div>
+    <!-- <input id="typeahead-format" type="text" class="form-control" [(ngModel)]="model" [ngbTypeahead]="search" [resultFormatter]="formatter" /> -->
+
+    <!-- <p>{{productsReturned}}</p>
+    <p>Page: {{page}}</p>
+    <p>{{productCounts}}</p> -->
+    <div class="grid-container">
+        <ng-container *ngFor="let product of products">
+            <div>
+                <div class="productdiv">
+                    <h1 class="pricetext">{{product.price}} zrk</h1>
+                    <img src=assets\{{product.imagepath}} alt={{product.imagepath}}>
+                </div>
+                <div class="productdiv"><a>{{product.name}}</a><button routerLink="/detailpage/{{product.productCategory}}/{{product.id}}" class="btn-buy" style="float: right"> Buy NOW! </button></div>
+                <!-- <div class="productdiv"><a>{{product.name}}</a><button routerLink="/detailpage" class="btn-buy" style="float: right"> Buy NOW! </button></div> -->
+
+            </div>
+        </ng-container>
+    </div>
+    <div class="paginator">
+        <ngb-pagination class="pagination" [collectionSize]="productCount" [pageSize]="9" [(page)]="page" aria-label="Default pagination" (pageChange)="GetSearchProducts()"></ngb-pagination>
+    </div>
+</div>
+<!-- <router-outlet></router-outlet> -->

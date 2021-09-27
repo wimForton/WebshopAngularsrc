@@ -1,0 +1,39 @@
+img {
+    width: 60%;
+    height: 70%;
+    max-height: 700px;
+    margin: auto;
+}
+
+h2,
+p {
+    text-align: left;
+}
+
+.pagediv {
+    background-color: rgba($color: rgb(16, 28, 82), $alpha: 0.7);
+    max-width: 1024px;
+    min-height: 1000px;
+}
+
+.imgdiv {
+    background-color: rgba($color: rgb(16, 28, 82), $alpha: 0.7);
+    //float: left;
+    margin-right: 5px;
+    //width: 100%;
+    //height: 70%;
+}
+
+.detailsdiv {
+    height: auto;
+}
+
+.btn-buy {
+    float: right;
+    background-color: rgb(131, 7, 7);
+    color: rgb(255, 217, 0);
+    padding: 10px;
+    border: 0px;
+    border-radius: 16px;
+    margin-top: 0px;
+}

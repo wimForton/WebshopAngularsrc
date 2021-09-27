@@ -1,0 +1,27 @@
+<div class="productspagediv">
+    <h4>
+        <div class="pagediv">
+            <div class="imgdiv"><img src=assets\{{product.imagepath}} alt={{product.imagepath}}></div>
+            <div class="detailsdiv">
+                <div>
+                    <button class="btn-buy">Add to shopping cart</button>
+                    <h2><span>Name: </span>{{product.name}}</h2>
+                    <p><span>Sn#: </span>{{product.serialNumber}}</p>
+                    <p><span>In Stock: </span>{{product.available}}</p>
+                    <p><span>Price: </span>{{product.price}} zrk</p>
+                    <p><span>Category: </span>{{categoryName}}</p>
+                </div>
+                <div *ngIf="moon">
+                    <p><span>Orbital speed: </span>{{product.orbitalSpeed}}</p>
+                </div>
+                <div *ngIf="planet">
+                    <p><span>Animal life: </span>{{product.animalLife}}</p>
+                    <p><span>Ecosystems: </span>{{product.ecoSystems}}</p>
+                </div>
+                <div *ngIf="star">
+                    <p><span>Brightness: </span>{{product.brightness}}</p>
+                </div>
+            </div>
+        </div>
+    </h4>
+</div>

@@ -1,0 +1,116 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+/* Importing Bootstrap SCSS file. */
+
+@import '~bootstrap/scss/bootstrap';
+body {
+    background-color: black;
+    background-image: url("assets/ufo2.jpg");
+    background-repeat: no-repeat;
+}
+
+h2,
+p {
+    color: white;
+    text-align: center;
+}
+
+.pricetext {
+    position: absolute;
+    font-size: 1em;
+    padding: 5px;
+    border: 1px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fill, 325px);
+    // background-color: #2196F3;
+    padding: 10px;
+}
+
+.btn-primary {
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 2px;
+    border-radius: 6px;
+    border-color: rgb(26, 45, 99);
+    background-color: rgb(26, 45, 99);
+}
+
+.btn-buy {
+    background-color: rgb(26, 45, 99);
+    color: rgb(255, 217, 0);
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 0px;
+    border-radius: 16px;
+    margin-top: 0px;
+}
+
+.paginator {
+    padding: 6px;
+}
+
+.productspagediv {
+    background-color: rgb(25, 42, 114);
+    background-color: rgba($color: rgb(165, 179, 243), $alpha: 0.1);
+    max-width: 1024px;
+    margin: auto;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.productdiv {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+div {
+    background-color: rgba($color: rgb(165, 179, 243), $alpha: 0.1);
+    padding: 3px;
+    border: 1px solid #61aeec;
+    border-radius: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 3px;
+}
+
+label {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+button {
+    margin-top: 5px;
+}
+
+.pagination>li>a {
+    background-color: rgb(26, 45, 99);
+    color: #ffffff;
+}
+
+.pagination>li>a:focus,
+.pagination>li>a:hover,
+.pagination>li>span:focus,
+.pagination>li>span:hover {
+    color: #ffffff;
+    background-color: rgb(12, 23, 56);
+    border-color: #ddd;
+}
+
+.pagination>.active>a {
+    color: rgb(20, 20, 51);
+    background-color: #a1baff !Important;
+    border: solid 1px #5A4181 !Important;
+}
+
+.pagination>.active>a:hover {
+    background-color: #5A4181 !Important;
+    border: solid 1px #5A4181;
+}
